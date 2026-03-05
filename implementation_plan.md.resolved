@@ -1,0 +1,43 @@
+# Implementation Plan - Apple DFU/Reboot VDM
+
+This plan adds support for Apple-specific Vendor Defined Messages (VDM) to trigger DFU and Reboot modes on Apple devices. These messages use SVID 0x05AC and are sent using the SOP'' DEBUG token.
+
+## Proposed Changes
+
+### USB-PD VDM Implementation
+#### [MODIFY] [usbpd_vdm_user.h](file:///Users/leon/code/usb-pd-vdm/USBPD/Target/usbpd_vdm_user.h)
+- Define Apple-specific constants:
+  - `APPLE_SVID` (0x05AC)
+  - `APPLE_CMD_PERFORM_ACTION` (0x12)
+  - `APPLE_ACTION_REBOOT` (0x105)
+  - `APPLE_ACTION_DFU` (0x106)
+- Add prototype for `USBPD_VDM_SendAppleCommand`.
+
+#### [MODIFY] [usbpd_vdm_user.c](file:///Users/leon/code/usb-pd-vdm/USBPD/Target/usbpd_vdm_user.c)
+- Implement state tracking for pending Apple commands.
+- Update [USBPD_VDM_SendSpecific](file:///Users/leon/code/usb-pd-vdm/USBPD/Target/usbpd_vdm_user.c#447-464) to fill VDOs for `APPLE_CMD_PERFORM_ACTION`:
+  - VDO1: Action ID (bits 15-0)
+  - VDO2: Argument (bits 31-16)
+- Implement `USBPD_VDM_SendAppleCommand` to initiate the request via `USBPD_PE_SVDM_RequestSpecific` using `USBPD_SOPTYPE_SOP2_DEBUG`.
+
+### User Interface / Trigger
+#### [MODIFY] [main.c](file:///Users/leon/code/usb-pd-vdm/Core/Src/main.c)
+- Implement button polling in [StartDefaultTask](file:///Users/leon/code/usb-pd-vdm/Core/Src/main.c#540-557).
+- Trigger `USBPD_VDM_SendAppleCommand`:
+  - Short press (< 1s) -> Reboot.
+  - Long press (> 2s) -> DFU.
+
+## Verification Plan
+
+### Automated Tests
+- None (requires physical hardware and Apple device).
+
+### Manual Verification
+1. Connect the STM32 board to an Apple iPad.
+2. Observe serial logs for successful PD negotiation (Explicit Contract).
+3. Short press the user button:
+   - Check logs for `[VDM] Port0: Sending Apple Reboot`.
+   - Verify iPad reboots.
+4. Long press the user button:
+   - Check logs for `[VDM] Port0: Sending Apple DFU`.
+   - Verify iPad enters DFU mode (screen stays black, but detected as DFU on a Mac).

@@ -1,0 +1,16 @@
+build/
+.visualgdb/
+*.suo
+.vs/
+*.user
+*.ewd
+*.ewp
+*.ewt
+*.hex
+*.out
+*.sim
+*.map
+Obj/
+*.TMP
+__pycache__
+

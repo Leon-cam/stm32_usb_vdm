@@ -1,0 +1,315 @@
+18:23:38 : STM32CubeProgrammer API v2.22.0 | MacOS-64Bits 
+18:24:10 : RTS low
+18:24:10 : DTR Low
+18:24:10 : Serial Port cu.debug-console is successfully opened.
+18:24:10 : Port configuration: parity = even, baudrate = 115200, data-bit = 8,                     stop-bit = 1.0, flow-control = off
+18:24:13 : Timeout error occured while waiting for acknowledgement.
+18:24:13 : Error: Activating device: KO. Please, verify the boot mode configuration and check the serial port configuration. Reset your device then try again... 
+18:24:31 : RTS low
+18:24:31 : DTR Low
+18:24:31 : Serial Port tty.debug-console is successfully opened.
+18:24:31 : Port configuration: parity = even, baudrate = 115200, data-bit = 8,                     stop-bit = 1.0, flow-control = off
+18:24:33 : Timeout error occured while waiting for acknowledgement.
+18:24:33 : Error: Activating device: KO. Please, verify the boot mode configuration and check the serial port configuration. Reset your device then try again... 
+19:35:43 : UR connection mode is defined with the SWrst reset mode
+19:35:43 : Warning: Device changed, refreshing...
+19:35:43 : UR connection mode is defined with the SWrst reset mode
+19:35:43 : ST-LINK SN  : 0671FF495082854967064558
+19:35:43 : ST-LINK FW  : V2J47M34
+19:35:43 : Board       : NUCLEO-G071RB
+19:35:43 : Voltage     : 3.22V
+19:35:43 : SWD freq    : 4000 KHz
+19:35:43 : Connect mode: Normal
+19:35:43 : Reset mode  : Software reset
+19:35:43 : Device ID   : 0x460
+19:35:43 : Revision ID : Rev B
+19:35:43 : Debug in Low Power mode enabled.
+19:35:43 : UPLOADING OPTION BYTES DATA ...
+19:35:43 :   Bank          : 0x00
+19:35:43 :   Address       : 0x40022020 
+19:35:43 :   Size          : 112 Bytes
+19:35:43 : UPLOADING ...
+19:35:43 :   Size          : 1024 Bytes
+19:35:43 :   Address       : 0x8000000
+19:35:43 : Read progress:
+19:35:43 : Data read successfully
+19:35:43 : Time elapsed during the read operation is: 00:00:00.018
+19:36:46 : Disconnected from device.
+19:59:22 : UR connection mode is defined with the SWrst reset mode
+19:59:22 : ST-LINK SN  : 0671FF495082854967064558
+19:59:22 : ST-LINK FW  : V2J47M34
+19:59:22 : Board       : NUCLEO-G071RB
+19:59:22 : Voltage     : 3.22V
+19:59:22 : SWD freq    : 4000 KHz
+19:59:22 : Connect mode: Normal
+19:59:22 : Reset mode  : Software reset
+19:59:22 : Device ID   : 0x460
+19:59:22 : Revision ID : Rev B
+19:59:22 : Debug in Low Power mode enabled.
+19:59:23 : UPLOADING OPTION BYTES DATA ...
+19:59:23 :   Bank          : 0x00
+19:59:23 :   Address       : 0x40022020 
+19:59:23 :   Size          : 112 Bytes
+19:59:23 : UPLOADING ...
+19:59:23 :   Size          : 1024 Bytes
+19:59:23 :   Address       : 0x8000000
+19:59:23 : Read progress:
+19:59:23 : Data read successfully
+19:59:23 : Time elapsed during the read operation is: 00:00:00.019
+19:59:48 : Opening and parsing file: nucleo-g071rb-usbpd.bin
+19:59:48 : Memory Programming ...
+19:59:48 :   File          : nucleo-g071rb-usbpd.bin
+19:59:48 :   Size          : 61.04 KB 
+19:59:48 :   Address       : 0x08000000
+19:59:48 : Erasing memory corresponding to segment 0:
+19:59:48 : Erasing internal memory sectors [0 30]
+19:59:49 : Download in Progress:
+19:59:50 : File download complete
+19:59:50 : Time elapsed during download operation: 00:00:01.815
+19:59:50 : Verifying...
+19:59:50 : Read progress:
+19:59:51 : Time elapsed during verifying operation: 00:00:00.700
+19:59:51 : Download verified successfully
+20:06:34 : Opening and parsing file: nucleo-g071rb-usbpd.bin
+20:06:34 : Memory Programming ...
+20:06:34 :   File          : nucleo-g071rb-usbpd.bin
+20:06:34 :   Size          : 61.39 KB 
+20:06:34 :   Address       : 0x08000000
+20:06:34 : Erasing memory corresponding to segment 0:
+20:06:34 : Erasing internal memory sectors [0 30]
+20:06:35 : Download in Progress:
+20:06:36 : File download complete
+20:06:36 : Time elapsed during download operation: 00:00:01.833
+20:06:36 : Verifying...
+20:06:36 : Read progress:
+20:06:36 : Time elapsed during verifying operation: 00:00:00.720
+20:06:36 : Download verified successfully
+20:16:54 : Opening and parsing file: nucleo-g071rb-usbpd.bin
+20:16:54 : Memory Programming ...
+20:16:54 :   File          : nucleo-g071rb-usbpd.bin
+20:16:54 :   Size          : 61.56 KB 
+20:16:54 :   Address       : 0x08000000
+20:16:54 : Erasing memory corresponding to segment 0:
+20:16:54 : Erasing internal memory sectors [0 30]
+20:16:54 : Download in Progress:
+20:16:55 : File download complete
+20:16:55 : Time elapsed during download operation: 00:00:01.806
+20:16:55 : Verifying...
+20:16:55 : Read progress:
+20:16:56 : Time elapsed during verifying operation: 00:00:00.721
+20:16:56 : Download verified successfully
+20:21:44 : Opening and parsing file: nucleo-g071rb-usbpd.bin
+20:21:44 : Memory Programming ...
+20:21:44 :   File          : nucleo-g071rb-usbpd.bin
+20:21:44 :   Size          : 61.63 KB 
+20:21:44 :   Address       : 0x08000000
+20:21:44 : Erasing memory corresponding to segment 0:
+20:21:44 : Erasing internal memory sectors [0 30]
+20:21:45 : Download in Progress:
+20:21:46 : File download complete
+20:21:46 : Time elapsed during download operation: 00:00:01.808
+20:21:46 : Verifying...
+20:21:46 : Read progress:
+20:21:47 : Time elapsed during verifying operation: 00:00:00.718
+20:21:47 : Download verified successfully
+20:22:34 : Error: Unable to get core ID
+20:22:34 : Error: Unable to get core ID
+20:22:34 : Warning: Connection to device 0x460 is lost
+20:22:35 : Disconnected from device.
+20:28:53 : UR connection mode is defined with the SWrst reset mode
+20:28:53 : Warning: Device changed, refreshing...
+20:28:53 : UR connection mode is defined with the SWrst reset mode
+20:28:53 : ST-LINK SN  : 0671FF495082854967064558
+20:28:53 : ST-LINK FW  : V2J47M34
+20:28:53 : Board       : NUCLEO-G071RB
+20:28:53 : Voltage     : 3.22V
+20:28:53 : SWD freq    : 4000 KHz
+20:28:53 : Connect mode: Normal
+20:28:53 : Reset mode  : Software reset
+20:28:53 : Device ID   : 0x460
+20:28:53 : Revision ID : Rev B
+20:28:53 : Debug in Low Power mode enabled.
+20:28:53 : UPLOADING OPTION BYTES DATA ...
+20:28:53 :   Bank          : 0x00
+20:28:53 :   Address       : 0x40022020 
+20:28:53 :   Size          : 112 Bytes
+20:28:53 : UPLOADING ...
+20:28:53 :   Size          : 1024 Bytes
+20:28:53 :   Address       : 0x8000000
+20:28:53 : Read progress:
+20:28:53 : Data read successfully
+20:28:53 : Time elapsed during the read operation is: 00:00:00.018
+20:28:55 : Opening and parsing file: nucleo-g071rb-usbpd.bin
+20:28:55 : Memory Programming ...
+20:28:55 :   File          : nucleo-g071rb-usbpd.bin
+20:28:55 :   Size          : 61.58 KB 
+20:28:55 :   Address       : 0x08000000
+20:28:55 : Erasing memory corresponding to segment 0:
+20:28:55 : Erasing internal memory sectors [0 30]
+20:28:56 : Download in Progress:
+20:28:57 : File download complete
+20:28:57 : Time elapsed during download operation: 00:00:01.834
+20:28:57 : Verifying...
+20:28:57 : Read progress:
+20:28:58 : Time elapsed during verifying operation: 00:00:00.707
+20:28:58 : Download verified successfully
+20:33:26 : Opening and parsing file: nucleo-g071rb-usbpd.bin
+20:33:26 : Memory Programming ...
+20:33:26 :   File          : nucleo-g071rb-usbpd.bin
+20:33:26 :   Size          : 61.71 KB 
+20:33:26 :   Address       : 0x08000000
+20:33:26 : Erasing memory corresponding to segment 0:
+20:33:26 : Erasing internal memory sectors [0 30]
+20:33:27 : Download in Progress:
+20:33:28 : File download complete
+20:33:28 : Time elapsed during download operation: 00:00:01.763
+20:33:28 : Verifying...
+20:33:28 : Read progress:
+20:33:29 : Time elapsed during verifying operation: 00:00:00.708
+20:33:29 : Download verified successfully
+20:37:35 : Opening and parsing file: nucleo-g071rb-usbpd.bin
+20:37:35 : Memory Programming ...
+20:37:35 :   File          : nucleo-g071rb-usbpd.bin
+20:37:35 :   Size          : 61.77 KB 
+20:37:35 :   Address       : 0x08000000
+20:37:35 : Erasing memory corresponding to segment 0:
+20:37:35 : Erasing internal memory sectors [0 30]
+20:37:36 : Download in Progress:
+20:37:37 : File download complete
+20:37:37 : Time elapsed during download operation: 00:00:01.767
+20:37:37 : Verifying...
+20:37:37 : Read progress:
+20:37:37 : Time elapsed during verifying operation: 00:00:00.706
+20:37:37 : Download verified successfully
+20:43:33 : Opening and parsing file: nucleo-g071rb-usbpd.bin
+20:43:33 : Memory Programming ...
+20:43:33 :   File          : nucleo-g071rb-usbpd.bin
+20:43:33 :   Size          : 62.06 KB 
+20:43:33 :   Address       : 0x08000000
+20:43:33 : Erasing memory corresponding to segment 0:
+20:43:33 : Erasing internal memory sectors [0 31]
+20:43:34 : Download in Progress:
+20:43:35 : File download complete
+20:43:35 : Time elapsed during download operation: 00:00:01.784
+20:43:35 : Verifying...
+20:43:35 : Read progress:
+20:43:36 : Time elapsed during verifying operation: 00:00:00.703
+20:43:36 : Download verified successfully
+20:47:41 : Opening and parsing file: nucleo-g071rb-usbpd.bin
+20:47:41 : Memory Programming ...
+20:47:41 :   File          : nucleo-g071rb-usbpd.bin
+20:47:41 :   Size          : 60.84 KB 
+20:47:41 :   Address       : 0x08000000
+20:47:41 : Erasing memory corresponding to segment 0:
+20:47:41 : Erasing internal memory sectors [0 30]
+20:47:42 : Download in Progress:
+20:47:43 : File download complete
+20:47:43 : Time elapsed during download operation: 00:00:01.751
+20:47:43 : Verifying...
+20:47:43 : Read progress:
+20:47:44 : Time elapsed during verifying operation: 00:00:00.698
+20:47:44 : Download verified successfully
+20:52:42 : Opening and parsing file: nucleo-g071rb-usbpd.bin
+20:52:42 : Memory Programming ...
+20:52:42 :   File          : nucleo-g071rb-usbpd.bin
+20:52:42 :   Size          : 60.83 KB 
+20:52:42 :   Address       : 0x08000000
+20:52:42 : Erasing memory corresponding to segment 0:
+20:52:42 : Erasing internal memory sectors [0 30]
+20:52:42 : Download in Progress:
+20:52:43 : File download complete
+20:52:43 : Time elapsed during download operation: 00:00:01.756
+20:52:43 : Verifying...
+20:52:43 : Read progress:
+20:52:44 : Time elapsed during verifying operation: 00:00:00.706
+20:52:44 : Download verified successfully
+20:57:29 : Opening and parsing file: nucleo-g071rb-usbpd.bin
+20:57:29 : Memory Programming ...
+20:57:29 :   File          : nucleo-g071rb-usbpd.bin
+20:57:29 :   Size          : 59.21 KB 
+20:57:29 :   Address       : 0x08000000
+20:57:29 : Erasing memory corresponding to segment 0:
+20:57:29 : Erasing internal memory sectors [0 29]
+20:57:30 : Download in Progress:
+20:57:31 : File download complete
+20:57:31 : Time elapsed during download operation: 00:00:01.713
+20:57:31 : Verifying...
+20:57:31 : Read progress:
+20:57:31 : Time elapsed during verifying operation: 00:00:00.680
+20:57:31 : Download verified successfully
+20:57:38 : Opening and parsing file: nucleo-g071rb-usbpd.bin
+20:57:38 : Memory Programming ...
+20:57:38 :   File          : nucleo-g071rb-usbpd.bin
+20:57:38 :   Size          : 59.21 KB 
+20:57:38 :   Address       : 0x08000000
+20:57:38 : Erasing memory corresponding to segment 0:
+20:57:38 : Erasing internal memory sectors [0 29]
+20:57:39 : Download in Progress:
+20:57:40 : File download complete
+20:57:40 : Time elapsed during download operation: 00:00:01.706
+20:57:40 : Verifying...
+20:57:40 : Read progress:
+20:57:41 : Time elapsed during verifying operation: 00:00:00.685
+20:57:41 : Download verified successfully
+20:57:41 : RUNNING Program ... 
+20:57:41 :   Address:      : 0x08000000
+20:57:41 : Application is running, Please Hold on...
+20:57:41 : Start operation achieved successfully
+21:04:48 : Opening and parsing file: nucleo-g071rb-usbpd.bin
+21:04:48 : Memory Programming ...
+21:04:48 :   File          : nucleo-g071rb-usbpd.bin
+21:04:48 :   Size          : 59.10 KB 
+21:04:48 :   Address       : 0x08000000
+21:04:48 : Erasing memory corresponding to segment 0:
+21:04:48 : Erasing internal memory sectors [0 29]
+21:04:49 : Download in Progress:
+21:04:50 : File download complete
+21:04:50 : Time elapsed during download operation: 00:00:01.704
+21:04:50 : Verifying...
+21:04:50 : Read progress:
+21:04:50 : Time elapsed during verifying operation: 00:00:00.675
+21:04:50 : Download verified successfully
+21:04:50 : RUNNING Program ... 
+21:04:50 :   Address:      : 0x08000000
+21:04:50 : Application is running, Please Hold on...
+21:04:50 : Start operation achieved successfully
+21:24:24 : STM32CubeProgrammer Fault Analyzer
+21:24:24 : Execution Mode   : Handler
+21:24:24 : Hard Fault detected in instruction located at 0x3FFFFFFF
+21:24:24 : Faulty function called at this location 0x08006B00 
+21:24:24 : Hard Fault State Register information : 
+21:24:24 : Exception return information : 
+21:24:24 : Return to Handler mode, exception return uses non-floating-point 
+21:24:24 : state from the MSP and execution uses MSP after return.
+21:25:36 : STM32CubeProgrammer Fault Analyzer
+21:25:36 : Execution Mode   : Handler
+21:25:36 : Hard Fault detected in instruction located at 0x3FFFFFFF
+21:25:36 : Faulty function called at this location 0x08006B00 
+21:25:36 : Hard Fault State Register information : 
+21:25:36 : Exception return information : 
+21:25:36 : Return to Handler mode, exception return uses non-floating-point 
+21:25:36 : state from the MSP and execution uses MSP after return.
+21:27:26 : Opening and parsing file: nucleo-g071rb-usbpd.bin
+21:27:26 : Memory Programming ...
+21:27:26 :   File          : nucleo-g071rb-usbpd.bin
+21:27:26 :   Size          : 86.80 KB 
+21:27:26 :   Address       : 0x08000000
+21:27:26 : Erasing memory corresponding to segment 0:
+21:27:26 : Erasing internal memory sectors [0 43]
+21:27:27 : Download in Progress:
+21:27:28 : File download complete
+21:27:28 : Time elapsed during download operation: 00:00:02.362
+21:27:28 : Verifying...
+21:27:28 : Read progress:
+21:27:29 : Time elapsed during verifying operation: 00:00:00.997
+21:27:29 : Download verified successfully
+21:27:29 : RUNNING Program ... 
+21:27:29 :   Address:      : 0x08000000
+21:27:29 : Application is running, Please Hold on...
+21:27:29 : Start operation achieved successfully
+21:28:07 : STM32CubeProgrammer Fault Analyzer
+21:28:07 : Execution Mode   : Handler
+21:28:07 : Hard Fault detected in instruction located at 0x00000000
+21:28:07 : Faulty function called at this location 0x61000000 
+21:28:07 : Hard Fault State Register information : 
+21:28:07 : Exception return information : 

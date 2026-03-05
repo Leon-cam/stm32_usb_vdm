@@ -1,0 +1,40 @@
+# Apple VDM Implementation Walkthrough
+
+I have implemented support for Apple-specific VDM commands (Reboot and DFU) on the STM32G071RB. These commands allow the Nucleo board to control the connected iPad/Apple device over USB Power Delivery.
+
+## Changes Made
+
+### VDM Layer
+- **[usbpd_vdm_user.h](file:///Users/leon/code/usb-pd-vdm/USBPD/Target/usbpd_vdm_user.h)**: Added Apple SVID (0x05AC) and action IDs (0x105 for Reboot, 0x106 for DFU).
+- **[usbpd_vdm_user.c](file:///Users/leon/code/usb-pd-vdm/USBPD/Target/usbpd_vdm_user.c)**:
+  - Implemented [USBPD_VDM_SendAppleCommand](file:///Users/leon/code/usb-pd-vdm/USBPD/Target/usbpd_vdm_user.c#581-587) to initiate the VDM request.
+  - Updated [USBPD_VDM_SendSpecific](file:///Users/leon/code/usb-pd-vdm/USBPD/Target/usbpd_vdm_user.c#448-479) to fill the correct VDOs (Action ID and Argument) when an Apple "Perform Action" command is requested.
+  - Used `USBPD_SOPTYPE_SOP2_DEBUG` (SOP'' DEBUG) as required by Apple devices for these commands.
+
+### Application Layer
+- **[main.c](file:///Users/leon/code/usb-pd-vdm/Core/Src/main.c)**:
+  - Added button polling logic in the default RTOS task.
+  - **Short Press** (< 2s): Triggers an Apple Reboot command.
+  - **Long Press** (> 2s): Triggers an Apple DFU command.
+
+## Verification Steps
+
+### 1. Build and Flash
+Compile the project and flash it to your STM32G071RB Nucleo board.
+
+### 2. Connect to iPad
+Connect the iPad to the USB-C port of the SRC1M1 board. Monitor the serial output:
+- You should see `[DPM] Port0: Explicit Contract -> VDM Discovery` once PD negotiation is complete.
+
+### 3. Trigger Reboot
+Press the User Button (Blue) briefly.
+- Output: `Button: Short Press -> Apple Reboot`
+- iPad should restart.
+
+### 4. Trigger DFU
+Press and hold the User Button (Blue) for more than 2 seconds.
+- Output: `Button: Long Press -> Apple DFU`
+- iPad should enter DFU mode.
+
+> [!NOTE]
+> The iPad may need to be in a state where it accepts these commands (e.g., connected as a UFP to the Nucleo acting as DFP/Source).
